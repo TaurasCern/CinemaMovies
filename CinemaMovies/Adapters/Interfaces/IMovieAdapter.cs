@@ -7,6 +7,6 @@ namespace CinemaMovies.Adapters.Interfaces
     {
         Basket Bind(AddMovieDTO addMovie);
         Review Bind(MovieReviewDTO movieReviewDTO);
-        GetMovieDTO Bind(Movie m);
+        GetMovieDTO Bind(Movie movie);
     }
 }

@@ -2,7 +2,7 @@
 {
     public class AddFoodDTO
     {
-        public int UserId { get; set; }
-        public int FoodId { get; set; }
+        public int BasketId { get; set; }
+        public int FoodItemId { get; set; }
     }
 }

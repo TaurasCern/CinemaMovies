@@ -4,7 +4,7 @@ namespace CinemaMovies.Repositories.Interfaces
 {
     public interface IFoodRepository
     {
-        List<Food> GetAll();
-        void Create(BasketItem item);
+        List<FoodItem> GetAll();
+        void Update(Basket basket);
     }
 }

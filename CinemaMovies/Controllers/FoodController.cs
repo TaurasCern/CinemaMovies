@@ -21,11 +21,12 @@ namespace CinemaMovies.Controllers
             return Ok(foodDTOs);
         }
 
-        [HttpPost("toBasket")]
+        [HttpPut("toBasket")]
         public IActionResult AddFoodToBasket(AddFoodDTO addFood)
         {
             var item = _foodAdapter.Bind(addFood);
-            _foodRepository.Create(item);
+            var basket = _foodAdapter.Bind(addFood, item);
+            _foodRepository.Update(basket);
             return Ok();
         }
     }

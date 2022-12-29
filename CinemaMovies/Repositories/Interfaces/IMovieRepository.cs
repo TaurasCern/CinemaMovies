@@ -4,6 +4,6 @@ namespace CinemaMovies.Repositories.Interfaces
 {
     public interface IMovieRepository
     {
-        public void Create(BasketItem item);
+        public void Create(Basket item);
     }
 }

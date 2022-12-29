@@ -6,5 +6,6 @@
         public int Title { get; set; }
         public int Description { get; set; }
         public ICollection<Review> Reviews { get; set; }
+        public ICollection<Ticket> Tickets { get; set; }
     }
 }

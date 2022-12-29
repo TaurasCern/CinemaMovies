@@ -19,11 +19,11 @@ namespace CinemaMovies.Controllers
             _movieAdapter = movieAdapter;
         }
 
-        [HttpPost("toBasket")]
+        [HttpPut("toBasket")]
         public IActionResult AddMovieToBasket([FromBody]AddMovieDTO addMovie)
         {
             var item = _movieAdapter.Bind(addMovie);
-            _movieRepository.Create(item);
+            _movieRepository.Update(item);
             return Ok();
         }
 

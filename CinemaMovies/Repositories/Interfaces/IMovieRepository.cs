@@ -4,7 +4,7 @@ namespace CinemaMovies.Repositories.Interfaces
 {
     public interface IMovieRepository
     {
-        void Create(Basket item);
+        void Update(Basket basket);
         void Create(Review movieReview);
         List<Movie> GetAll();
         Movie Get(int id);

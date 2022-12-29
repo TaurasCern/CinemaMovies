@@ -5,7 +5,8 @@ namespace CinemaMovies.Adapters.Interfaces
 {
     public interface IFoodAdapter
     {
-        GetFoodDTO Bind(Food food);
-        BasketItem Bind(AddFoodDTO addFood);
+        GetFoodDTO Bind(FoodItem food);
+        BasketFood Bind(AddFoodDTO addFood);
+        Basket Bind(AddFoodDTO addFood, BasketFood food);
     }
 }

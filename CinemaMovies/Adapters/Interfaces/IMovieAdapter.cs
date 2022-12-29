@@ -5,6 +5,8 @@ namespace CinemaMovies.Adapters.Interfaces
 {
     public interface IMovieAdapter
     {
-        public BasketItem Bind(AddMovieDTO addMovie);
+        BasketItem Bind(AddMovieDTO addMovie);
+        MovieReview Bind(MovieReviewDTO movieReviewDTO);
+        GetMovieDTO Bind(Movie m);
     }
 }

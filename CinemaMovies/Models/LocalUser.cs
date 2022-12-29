@@ -7,6 +7,9 @@
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
 
+        public int BasketId { get; set; }
+        public Basket Basket { get; set; }
+
         public ICollection<Review> Reviews { get; set; }
     }
 }

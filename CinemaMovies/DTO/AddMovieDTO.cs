@@ -2,7 +2,7 @@
 {
     public class AddMovieDTO
     {
-        public int userId { get; set; }
-        public int movieId { get; set; }
+        public int UserId { get; set; }
+        public int MovieId { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿using CinemaMovies.Data;
+﻿using CinemaMovies;
+using CinemaMovies.Data;
+using CinemaMovies.DTO;
 using CinemaMovies.Models;
 using CinemaMovies.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -113,7 +115,7 @@ namespace API_mokymai.Repository
             {
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
-                Username = registrationRequest.Name,
+                Username = registrationRequest.Username,
             };
 
             _db.LocalUsers.Add(user);

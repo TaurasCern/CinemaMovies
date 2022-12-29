@@ -1,4 +1,5 @@
 ﻿
+using CinemaMovies.DTO;
 using CinemaMovies.Models;
 
 namespace CinemaMovies.Repositories.Interfaces

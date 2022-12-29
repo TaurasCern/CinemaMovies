@@ -29,7 +29,7 @@ namespace API_mokymai.Repository
         /// </summary>
         /// <param name="email">Registration username</param>
         /// <returns>A flag indicating if username already exists</returns>
-        public async Task<bool> IsUniqueUserAsync(string username)
+        public async Task<bool> IsUniqueUserAsync(int username)
         {
             var user = _db.LocalUsers.FirstOrDefault(x => x.Username == username);
             if (user == null)

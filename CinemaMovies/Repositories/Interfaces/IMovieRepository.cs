@@ -1,12 +1,15 @@
-﻿using CinemaMovies.Models;
+﻿
+using CinemaMovies.Models;
 
 namespace CinemaMovies.Repositories.Interfaces
 {
-    public interface IMovieRepository
+    public interface IMovieRepository : IRepository<Movie>
     {
-        void Update(Basket basket);
-        void Create(Review movieReview);
-        List<Movie> GetAll();
-        Movie Get(int id);
+        Task<Movie> UpdateAsync(Movie movie);
+        Task<bool> ExistAsync(int id);
+        Task Update(Basket basket);
+        Task Create(Review movieReview);
+        Task<List<Movie>> GetAll();
+        Task<Movie> Get(int id);
     }
 }

@@ -9,10 +9,10 @@ namespace CinemaMovies.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
-        private readonly IMovieRepository _movieRepository;
+        private readonly IReviewRepository _movieRepository;
         private readonly IMovieAdapter _movieAdapter;
 
-        public MoviesController(IMovieRepository movieRepository,
+        public MoviesController(IReviewRepository movieRepository,
             IMovieAdapter movieAdapter)
         {
             _movieRepository = movieRepository;
